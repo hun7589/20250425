@@ -21,3 +21,7 @@ console.log(num2 === num1); //다름.
 
 console.log(num2!=num1); //값만 비교.
 console.log(num2 !== num1); //값,타입 비교
+
+console.clear();
+console.log(num>=num2||num1<100);
+console.log(num>=num2&&num1<100);

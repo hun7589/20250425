@@ -1,0 +1,31 @@
+#container{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ccc;
+  border: solid 1px #ccc;
+  overflow: hidden;
+  /* padding:  100px */
+}
+
+.travel-card img{
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  padding: 20px;
+}
+.travel-card{
+  border: 1px solid #ccc;
+  width: 250px;
+  height: 340px;
+  border-radius: 20px;
+  color: black;
+  float: left;
+  text-align: center;
+  margin: 0 20px 30px 25px;
+  /* margin-right: 20px ; */
+}
+.font{
+  font-weight: bold;
+}
+

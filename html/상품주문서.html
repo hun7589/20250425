@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품주문서</title>
+</head>
+<style>
+  #container{
+    width: 700px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+
+  }
+  label{
+    /* width: 155px; */
+    /* display: inline-block; */
+    float: left;
+  }
+  .a1 label{
+    width: 80px;
+
+  }
+  ul li{
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  legend{
+    color: blueviolet;
+    font-weight: bold;
+  }
+  footer{
+    text-align: center;
+    padding: 30px;
+  }
+  form fieldset{
+    margin-top: 30px;
+  }
+
+
+</style>
+<body>
+  <div id="container">
+    <h1>상품주문서</h1>
+    <form name="order" action="order.jsp" method="post">
+      <fieldset class="a1">
+        <legend>개인 정보</legend>
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input type="text" id="text" name="text" placeholder="여백없이 입력">
+            </li>
+            <li>
+              <label for="phone">연락처</label>
+              <input type="tel" id="tel" name="tel" placeholder="연락가능한 번호">
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset class="a1">
+        <legend>배송지 정보</legend>
+        <ul>
+          <li>
+            <label for="text">주소</label>
+            <input type="text" id="text" name="text" size="40">
+          </li>
+          <li>
+            <label for="phone">전화번호</label>
+              <input type="tel" id="tel" name="tel">
+          </li>
+          <li>
+            <label for="texta">메모</label>
+            <textarea cols="40" rows="3"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="a2">
+        <legend>주문 정보</legend>
+        <ul>
+        <li>
+          <label><input type="checkbox" name="box" value="box">경북성주 참외(5kg)</label>
+          <input type="number" id="number" name="number" min="0" max="5" value="0" >Box
+        </li>
+          <li>
+            <label><input type="checkbox" name="box" value="box">경북영천 포도(5kg)</label>
+            <input type="number" id="number" name="number"min="0" max="5" value="0" >Box
+          </li>
+          <li>
+            <label><input type="checkbox" name="box" value="box">경북봉화 수박(5kg)</label>
+            <input type="number" id="number" name="number"min="0" max="5" value="0">Box
+          </li>
+        </ul>
+      </fieldset>
+    <footer>
+      <input type="submit"value="주문하기">
+      <input type="reset"value="다시 작성">
+    </footer>
+    </form>
+  </div>
+  
+</body>
+</html>

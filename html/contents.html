@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문서내용</title>
+  <style>
+    table{
+      width: 80%1;
+      border: 3px solid #ccc;
+      border-collapse: separate;
+      /* border-collapse: collapse; */
+      /* border-spacing: 10px 20px; */
+      empty-cells: show;
+    }
+    th, td{
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+    }
+
+    thead{
+      background-color: beige;
+    }
+    tbody{
+      text-align: center;
+    }
+    tfoot{
+      background-color: #ccc;
+
+    }
+    nav ul{
+      text-align: center;
+      /* list-style-position: inside; */
+      /* list-style-type: square; */
+      list-style: none;
+    }
+    #nav1 li{
+      border: 1px solid #ccc;
+      /* padding: 10px; */
+      /* margin: 10px 20px; */
+      display: inline-block;
+      background-color: black;
+    }
+    #nav1 a{
+      text-decoration: none;
+      color: white;
+      /* background-color: black; */
+      padding: 10px;
+      display: block;
+    }
+    #nav{
+      background-color: #00f;
+      padding: 10px;
+      overflow: hidden;
+    }
+    #nav li{
+      float: left;
+      background-color: #fff;
+      padding: 10px;
+      margin: 0 10px;
+    }
+    #nav a{
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+    }
+    #nav ul{
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>제 페이지를 찾아 와주셔서 감사합니다</div></h1>
+      <nav>
+        <ul id="nav1">
+          <li><a href="#web_b">웹 기초</a></li>
+          <li><a href="#multi-media">멀티미디어</a></li>
+          <li><a href="#travel">여행 준비물</a></li>
+          <li><a href="#">문서의 처음</a></li>
+          
+        </ul>
+
+      </nav>
+      <nav id="nav">
+        <ul>
+          <li><a href="#web_b">웹 기초</a></li>
+          <li><a href="#multi-media">멀티미디어</a></li>
+          <li><a href="#travel">여행 준비물</a></li>
+          <li><a href="#">문서의 처음</a></li>
+          
+        </ul>
+
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="web_b">웹개발 기초</h2>
+        <article>
+        <h3>HTML</h3>
+          <dl>
+            <dt>html</dt>
+            <dd>하이퍼텍스트 마크업 언어</dd>
+            <dd>웹문서의 내용을 작업한다.</dd>
+            <dd>HTML문서는 웹브라우저에 의해 해석</dd>
+          </dl>
+        </article>
+        <article>
+          <h3>CSS</h3>
+          <dl>
+            <dt>css</dt>
+            <dd>웹문서의 디자인을 담당</dd>
+            <dd>내부 스타일시트는 head영역에 style 태그에 작업</dd>
+            <dd>외부 스타일시트는 파일로 저장하고 연결해서 사용</dd>
+          </dl>
+          <h3>표 만들기</h3>
+          <table border="1">
+          <caption>html과css</caption>
+          <colgroup>
+            <col style="background-color: bisque;">
+            <col>
+            <col span="2" style="background-color: skyblue;">
+                        <!-- <col> -->
+          </colgroup>
+            <thead>
+              <tr>
+              <th>순번</th>
+              <th>과정명</th>
+              <th>인원</th>
+              <th>비고</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td rowspan="2">html</td>
+                <td>5</td>
+                <td>기초반</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <!-- <td>html</td> -->
+                <td>10</td>
+                <td>중급반</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td rowspan="2">css</td>
+                <td>7</td>
+                <td>초급반</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <!-- <td>css</td> -->
+                <td>11</td>
+                <td>고급반</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">인원은 사정에 따라 변동 될 수 있습니다</td>
+              </tr>
+            </tfoot>
+          </table>
+          <table>
+            <caption>파라다이스객실</caption>
+            <thead>
+              <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>핑크방</td>
+                <td>여성</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+              </tr>
+              <tr>
+                <td rowspan="2">보라방</td>
+                <td>동성</td>
+              </tr>
+              <tr>
+                <td>가족1팀</td>
+              </tr>
+              <tr>
+                <td>그린방</td>
+                <td>-</td>
+                <td>2인실</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="4" style="text-align: center;">바깥채 전체를 렌트합니다</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+        <ARTICLE>
+          <H3>JavaScript</H3>
+          <dl>
+            <dt>javascript</dt>
+            <dd>사용자와 상호작용을 나타내는 언어</dd>
+            <dd>html안에 script 태그에 작업</dd>
+            <dd>위치는 body 닫히기 전에 사용</dd>
+          </dl>
+        </ARTICLE>
+      </section>
+    </main>
+    <div id="multi-media">
+      <h3>이미지 삽입</h3>
+      <figure>
+        <img src="img/레드향.jfif" alt="레드향" width="20%" height="20%" title="레드향">
+        <figcaption>제주도 특산품 레드향</figcaption>
+      </figure>
+      <h3>외부 파일 삽입</h3>
+      <object data="media/2-1.실습(html작성).pdf" width="500" height="300"></object>
+      <embed src="media/2-1.실습(html작성).pdf" width="500" height="300">
+      <object data="test2.html" width="500" height="300"></object>
+      <h3>오디오/비디오 삽입</h3>
+      <audio src="media/미소속에비친그대.mp3" autoplay loop controls muted></audio>
+      <video src="media/사랑한다사랑해.mp4" width="500" height="400" muted controls loop poster="img/레드향.jfif"></video>
+      <h3>유튜브 영상 넣기</h3>
+      <iframe width="350" height="500" src="https://www.youtube.com/embed/OEA49HUMI3U?si=3MRVSGR0ARNxAtAr" title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="media/2-1.실습(html작성).pdf" width="300" height="300" frameborder="0"></iframe>
+    </div>
+    <aside>
+      <h3>aside 영역</h3>
+      <ol type="A" start="3">
+        <li>로그인창</li>
+        <li>쇼핑광고</li>
+        <li>날씨</li>
+        <li>증시</li>
+      </ol>
+      <b><p>코끼리 냉장고 안에 넣기</p></b>
+      <ol type="i">
+        <li>냉장고 문을 연다</li>
+        <li>코끼리를 넣는다</li>
+        <li>문을 닫는다</li>
+      </ol>
+      <b><p id="travel">여행 준비물</p></b>
+      <ul>
+        <li>여권</li>
+        <li>운전면허증</li>
+        <li>여권</li>
+        <li>세면도구</li>
+      </ul>
+      <h3>상품 구성</h3>
+      <dl>
+        <dt>선물용 3kg</dt>
+        <dd>소과 13~16과</dd>
+        <dd>중과 10~12과</dd>
+      </dl>
+      <dl>
+        <dt>선물용 5kg</dt>
+        <dd>중과 15~19과</dd>
+      </dl>
+    </aside>
+    <footer>
+      <h3>푸터 영역</h3>
+      <p>저작정보, 주소, 개인정보 보호방침, SNS연결</p>
+    </footer>
+
+  </div>
+
+
+
+</body>
+</html>

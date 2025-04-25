@@ -1,0 +1,59 @@
+#container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+img{
+  width: 100%;
+  height: 190px;
+}
+header{
+  width: 100%;
+  background: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header img{
+  width: 80px;
+  height: 80px;
+}
+header nav{
+  width: 50%;
+}
+nav ul{
+  display: flex;
+  /* gap: 40px; */
+  justify-content: space-around;
+  list-style: none;
+  /* align-items: center; */
+  margin: 0;
+}
+
+main{
+  width: 80%;
+}
+aside{
+  width: 15%;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+article{
+  width: 45%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+section h1{
+  width: 100%;
+}
+footer{
+  width:100%;
+  background: bisque;
+}

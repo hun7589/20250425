@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=East+Sea+Dokdo&family=Nanum+Pen+Script&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: "Nanum Pen Script", cursive;
+        }
+        h1{
+            width: 300px;
+            height: 200px;
+            border: 2px solid gray;
+            /* border-top-left-radius: 50%; */
+            /* border-top-right-radius: 50%; */
+            text-align: center;
+            line-height: 200px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 20px 2px #000 inset;
+            border-radius: 20%
+
+        }
+        .text-align{
+            text-align: justify;
+            line-height: 2;
+            font-size: 16px;
+        }
+        nav a{
+            text-decoration: none;
+            /* text-decoration: overline; */
+            /* text-decoration: line-through; */
+            /* text-decoration: underline; */
+ 
+        }
+        nav ul li{
+            box-sizing: border-box;
+            height: 50px;
+            width: 150px;
+            display: inline-block;
+            list-style: disc;
+            padding: 2px 10px 2px 10px;
+            /* margin-right: 20px; */
+        }
+        .boxsize-b{
+            width: 300px;
+            height: 200px;
+            border: 2px solid gray;
+            text-align: center;
+            line-height: 200px;
+            padding: 10px;
+        }
+        nav ul li:nth-child(3){
+            background-color: yellow;
+        }
+        nav ul li:hover{
+            background-color: rgb(180, 142, 174);
+            border-radius: 10px;
+            border-bottom: solid 3px #ccc;
+            box-sizing: border-box;
+        }
+        nav ul li:last-child{
+            border-right: none;
+        }
+        main{
+            width: 700px;
+            float: left;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="container">
+        <h1>웹문서 구조</h1>
+        <h1 class="boxsize-b">웹문서 구조2</h1>
+        <header>
+            <h2>헤더영역</h2>
+            <p>문서의 맨 위의 내용<br>
+            <span>검색창</span></p>
+        <nav>
+            <ul>
+                <li><a href="#">🐱‍👤메뉴영역</a></li>
+                <li><a href="#">🐱‍👤메뉴영역</a></li>
+                <li><a href="#">🐱‍👤메뉴영역</a></li>
+                <li><i class="fa-solid fa-house"></i>메뉴영역</li>
+                <li><div><i class="fa-solid fa-house fa-flip" style="color: #97fcb9;"></i>메뉴항목</li>
+            </ul>
+        </nav>
+
+</header>
+<hr>
+    <main>
+        <h2>여기는 메인 영역</h2>
+        <section>
+            <h2>섹션의 제목</h2>
+            <article>
+                <h3>article area</h3>
+                <p class="text-align"><strong>Lorem ipsum</strong><br> <b>dolor</b> sit amet consectetur, adipisicing elit. Quo aut dolorem et laudantium assumenda dolores eius voluptatum voluptate, expedita voluptas aliquid ratione eum nulla voluptatibus laboriosam maxime quidem libero odio.</p>
+                 <blockquote cite="www.naver.com"><em><b></b><ins><mark>Lorem ipsum</mark></ins></b> </em><br><i>dolor</i> sit amet consectetur adipisicing elit. Eaque facilis assumenda, natus temporibus neque ullam nobis aliquid repellat at minima sunt totam laborum dolorum enim optio unde a corporis tempore?</blockquote>   
+            </article>
+            <article>
+            <h3>줄임말 표현</h3>
+            <p><abbr title="엉덩이를 뜨겁게"><q>엉뜨</q></abbr></p>
+            <code>push()</code>
+            <h3>y<sup>2</sup>   =   x<sup>2</sup>   +   3</h3>
+            <h3>H<sub>2</sub>O</h3>
+            <pre>   pre 태그는
+                입력한  그대로   표시</pre>
+            <h4>
+                <ruby>學習<rt>がくしゅう</rt></ruby>
+            </h4>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <aside>
+       <h3>어사이드 영역</h3> 
+        <p>광고, 로그인
+        </p>
+    </aside>
+    <footer>
+       <h3>푸터영역</h3> 
+        <p>저작자 정보, 개인정보 방침, sns</p>
+        
+    </footer>
+
+    </div>
+       
+    
+</body>
+</html>

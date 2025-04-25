@@ -1,0 +1,144 @@
+/* #container{
+  width: 1000px;
+  margin: 0 auto;
+
+}
+header{
+  background-color: pink;
+  padding: 10px;
+  overflow: hidden;
+}
+header img{
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+nav{
+  width: 600px;
+  float: right;
+}
+nav ul{
+  list-style: none;
+}
+nav li{
+  float: left;
+  padding: 10px;
+  margin: 0 20px;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+main{
+  width: 800px;
+  float: left;
+  padding: 10px;
+}
+
+aside{
+  width: 180px;
+  float: right;
+  margin-top: 88px;
+}
+aside img{
+  width: 180px;
+  height: 208px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 2px #000;
+}
+footer{
+  background-color: rgb(86, 35, 168);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  clear: both;
+} 
+footer p{
+  margin:0;
+}
+article{
+  width: 368px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 4px;
+  height: 290px;
+}
+article p{
+  line-height: 1.8;
+}
+section h1{
+  /* background-image: url(/img/퍼그.webp) ;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: left center; */
+  /* background: url(/img/미니어처\ 핀셔.jfif)no-repeat left center; */
+  /* background-size: 24px 24px; */
+  /* padding-left: 30px; */
+
+}
+/* body{ */
+  /* background: url(/img/애견가이드\ 로고.avif)fixed no-repeat center; */
+  /* background-size: 300px 300px; */
+}
+/* header{ */
+  /* background: repeating-linear-gradient(90deg,blue,blue 5%,red ,red 20% ); */
+  /* background: repeating-radial-gradient(closest-side,yellow,#0f0,yellow); */
+/* } */
+/* #bg{ */
+  /* background: repeating-radial-gradient(circle closest-side at 50% 50%,black,black 10%,blue 10%,blue 20%); */
+/* } */
+/* /* header img{
+  float: left;
+  height: 123px;
+}
+nav ul{
+ background-color: pink;
+ list-style: none;
+ padding: 50px;
+ text-align: right;
+
+
+}
+nav li{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+
+
+} */
+/* 
+section{
+
+}
+article{
+  border: 1px solid #ccc;
+  margin: 5px;
+  width: 400px;
+  padding: 10px;
+} */
+  /* article p::first-line{
+    color: aliceblue;
+  }
+  article p::first-letter{
+    font-size: 24px;
+    background-color: yellow;
+  }
+  section h1::after{
+    content: "🚑🚒긴급!!!🚑🚒";
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    position: relative;
+    top: -18px;
+  }
+  ::selection{
+    background-color: black;
+    color: white; 
+  } */

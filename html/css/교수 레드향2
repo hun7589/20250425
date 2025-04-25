@@ -1,0 +1,17 @@
+#container{
+  width: 600px;
+  margin: 0 auto;
+}
+article{
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.top_r{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.bottom_r{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
