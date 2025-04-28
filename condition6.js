@@ -17,6 +17,21 @@ if (m > n) {
 
 //2. 임의의 2개의 수(40~70)를 생성하여 둘 중 큰 값은 얼마이고 작은 값은 얼마인지 나타내기.
 
+i1 = Math.floor(Math.random() * 31) + 40;
+i2 = Math.floor(Math.random() * 31) + 40;
+
+if (i1 > i2) {
+    console.log(i1 + "와" + i2 + "중에 더 큰 값은" + i1 + "입니다.")
+} else if(i1==i2) {
+    console.log(i1 + "와" + i2 + " 는 같은 값 입니다.");
+} else {
+    console.log(i + " 와" + i2 + " 중에 더 큰 값은" + i2 + "입니다.");
+
+}
+
+
+
+
 function x(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
