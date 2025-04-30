@@ -5,7 +5,7 @@ console.log(data); //객체
 
 
 //button<삭제> 템플릿
-let btnTemplate = "<button class='btn btn-danger' on click ='deleteTr(event)'>삭제</button>"
+let btnTemplate = "<button class='btn btn-danger' onclick ='deleteTr(event)'>삭제</button>"
 
 
 let fields = ['id', 'first_name', 'gender', `salary`];
@@ -50,6 +50,7 @@ document.querySelector(`button.btn-primary`)
   });
 //2. select "change"
 document.querySelector(`select#selectGender`).addEventListener('change', function () {
+  console.log(this);
   let gender = document.querySelector(`#selectGender`).value;
   let lists = "";
   for(let x of data){
@@ -79,7 +80,9 @@ function makeTr(emp = {}) {
   return str;
 }
 
-
+function deleteTr(e){
+  e.target.parentElement.parentElement.remove();
+}
 
 
 
