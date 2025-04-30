@@ -39,7 +39,7 @@ console.log(numAry);
 // numAry = [10, 20, 60]
 //10~50 사이의 값이 정상적으로 생성되는지 체크 : every()
 
-result = numAry.every(function (item) {
+result = numAry.every(item => {
   return item >= 10 && item <= 50;
 })
 console.log(result);
